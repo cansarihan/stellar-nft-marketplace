@@ -15,7 +15,8 @@ frontend with real-time updates, full error handling and loading states.
 
 | Item | Value |
 | --- | --- |
-| **Live demo** | _add your Vercel/Netlify URL here_ |
+| **Live demo** | **https://frontend-can-sarihan.vercel.app** |
+| **GitHub repo** | https://github.com/cansarihan/stellar-nft-marketplace |
 | **Demo video (1–2 min)** | _add your video link here_ |
 | **Network** | Stellar **Testnet** |
 | **NFT contract** | [`CBRYT3WCYXUINJCW7TV5NRRWROGNFVCG6TA6SMSK4MUDIDJYDLZS7RKF`](https://stellar.expert/explorer/testnet/contract/CBRYT3WCYXUINJCW7TV5NRRWROGNFVCG6TA6SMSK4MUDIDJYDLZS7RKF) |

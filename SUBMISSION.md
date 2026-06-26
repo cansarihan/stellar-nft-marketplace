@@ -7,10 +7,10 @@ steps** that require *your* accounts (GitHub, Vercel) and a screen recorder.
 
 | Checklist item | Status |
 | --- | --- |
-| Public GitHub repository | ⬜ push (steps below) |
+| Public GitHub repository | ✅ https://github.com/cansarihan/stellar-nft-marketplace |
 | README with complete documentation | ✅ `README.md` |
 | 10+ meaningful commits | ✅ (see `git log`) |
-| Live demo link | ⬜ deploy to Vercel (steps below) |
+| Live demo link | ✅ https://frontend-can-sarihan.vercel.app |
 | Contract deployment address | ✅ in README + on testnet |
 | Transaction hash for contract interaction | ✅ in README |
 | Screenshot — mobile responsive UI | ⬜ capture from live demo |
