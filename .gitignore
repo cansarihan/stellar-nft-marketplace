@@ -1,0 +1,16 @@
+# Rust
+target
+
+# Soroban / Stellar local settings
+.soroban
+.stellar
+
+# Node
+node_modules
+frontend/dist
+frontend/.env
+frontend/.env.local
+
+# Misc
+.DS_Store
+*.log
