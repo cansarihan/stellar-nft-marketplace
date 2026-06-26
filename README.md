@@ -25,12 +25,17 @@ frontend with real-time updates, full error handling and loading states.
 
 ### Example transactions
 
-| Action | Transaction hash |
-| --- | --- |
-| NFT contract `init` | [`23dc21fe…acc93f`](https://stellar.expert/explorer/testnet/tx/23dc21fe6b9bee7aacda6809f6d265069069a281fe4aacab088d302e96acc93f) |
-| Marketplace `init` | [`4214164b…12d94f`](https://stellar.expert/explorer/testnet/tx/4214164be810d453b40d012915b608ed2136e61a78727cae94a4648c8412d94f) |
-| `mint` NFT #1 | [`7113f146…646ad6`](https://stellar.expert/explorer/testnet/tx/7113f146edab88cb1a1dffca30ea7b44ac9c028a910d278715c988b8c9646ad6) |
-| **`list` NFT #1 (inter-contract call)** | [`fd82d747…50aaa1`](https://stellar.expert/explorer/testnet/tx/fd82d747c5e50523dc0864b064f191db85763bccbe6f522c98166fcabd50aaa1) |
+All four transactions are confirmed `successful` on Stellar Testnet. Each row
+links to the **stellar.expert** explorer and to the authoritative **Horizon**
+API record (which is instant — stellar.expert's testnet indexer can lag a few
+minutes behind).
+
+| Action | Explorer | Verify (Horizon) |
+| --- | --- | --- |
+| NFT contract `init` | [`23dc21fe…acc93f`](https://stellar.expert/explorer/testnet/tx/23dc21fe6b9bee7aacda6809f6d265069069a281fe4aacab088d302e96acc93f) | [json](https://horizon-testnet.stellar.org/transactions/23dc21fe6b9bee7aacda6809f6d265069069a281fe4aacab088d302e96acc93f) |
+| Marketplace `init` | [`4214164b…12d94f`](https://stellar.expert/explorer/testnet/tx/4214164be810d453b40d012915b608ed2136e61a78727cae94a4648c8412d94f) | [json](https://horizon-testnet.stellar.org/transactions/4214164be810d453b40d012915b608ed2136e61a78727cae94a4648c8412d94f) |
+| `mint` NFT #1 | [`7113f146…646ad6`](https://stellar.expert/explorer/testnet/tx/7113f146edab88cb1a1dffca30ea7b44ac9c028a910d278715c988b8c9646ad6) | [json](https://horizon-testnet.stellar.org/transactions/7113f146edab88cb1a1dffca30ea7b44ac9c028a910d278715c988b8c9646ad6) |
+| **`list` NFT #1 (inter-contract call)** | [`fd82d747…50aaa1`](https://stellar.expert/explorer/testnet/tx/fd82d747c5e50523dc0864b064f191db85763bccbe6f522c98166fcabd50aaa1) | [json](https://horizon-testnet.stellar.org/transactions/fd82d747c5e50523dc0864b064f191db85763bccbe6f522c98166fcabd50aaa1) |
 
 > The **`list`** transaction is the headline proof of inter-contract
 > communication: a single call into the marketplace emits **both** the NFT
@@ -174,11 +179,17 @@ Both jobs cache dependencies and fail the pipeline on any error.
 
 ## 📸 Screenshots
 
-> Replace the placeholders below with your captures (see `docs/`).
+### Mobile responsive UI
+<img src="docs/mobile.png" alt="Mobile responsive UI" width="320" />
 
-- **Mobile responsive UI** — `docs/mobile.png`
-- **CI/CD pipeline running** — `docs/ci.png`
-- **Test output (3+ passing)** — `docs/tests.png`
+### CI/CD pipeline (passing)
+![CI/CD pipeline](docs/ci.png)
+
+### Test output — 26 passing (11 contract + 15 frontend)
+![Test output](docs/tests.png)
+
+### Desktop
+![Desktop UI](docs/desktop.png)
 
 ---
 
