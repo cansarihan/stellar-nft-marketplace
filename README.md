@@ -17,7 +17,7 @@ frontend with real-time updates, full error handling and loading states.
 | --- | --- |
 | **Live demo** | **https://frontend-can-sarihan.vercel.app** |
 | **GitHub repo** | https://github.com/cansarihan/stellar-nft-marketplace |
-| **Demo video (1–2 min)** | _add your video link here_ |
+| **Demo video (~1 min)** | [docs/demo.mp4](https://github.com/cansarihan/stellar-nft-marketplace/raw/main/docs/demo.mp4) |
 | **Network** | Stellar **Testnet** |
 | **NFT contract** | [`CBRYT3WCYXUINJCW7TV5NRRWROGNFVCG6TA6SMSK4MUDIDJYDLZS7RKF`](https://stellar.expert/explorer/testnet/contract/CBRYT3WCYXUINJCW7TV5NRRWROGNFVCG6TA6SMSK4MUDIDJYDLZS7RKF) |
 | **Marketplace contract** | [`CB5ZDO6BPMMWWA3JWOHYEDTMEEY2S37IOEGBXLBS3BJW4MXUODKG4RJ2`](https://stellar.expert/explorer/testnet/contract/CB5ZDO6BPMMWWA3JWOHYEDTMEEY2S37IOEGBXLBS3BJW4MXUODKG4RJ2) |
@@ -190,6 +190,14 @@ Both jobs cache dependencies and fail the pipeline on any error.
 
 ### Desktop
 ![Desktop UI](docs/desktop.png)
+
+### Demo video (~1 min)
+A one-minute walkthrough that fires **real on-chain transactions** mid-recording
+and shows the live event feed streaming them in real time (mint → the new NFT
+appears with no refresh → list → the inter-contract escrow `transfer` + `listed`
+events arrive live).
+
+▶️ **[Watch docs/demo.mp4](https://github.com/cansarihan/stellar-nft-marketplace/raw/main/docs/demo.mp4)**
 
 ---
 

@@ -15,8 +15,8 @@ steps** that require *your* accounts (GitHub, Vercel) and a screen recorder.
 | Transaction hash for contract interaction | ✅ in README |
 | Screenshot — mobile responsive UI | ⬜ capture from live demo |
 | Screenshot — CI/CD pipeline running | ⬜ capture after first push |
-| Screenshot — test output (3+ passing) | ✅ `cargo test` 11 / `npm test` 15 |
-| Demo video (1–2 min) | ⬜ record |
+| Screenshot — test output (3+ passing) | ✅ `cargo test` 11 / `npm test` 15 (`docs/tests.png`) |
+| Demo video (1–2 min) | ✅ `docs/demo.mp4` (~1 min, real on-chain) |
 
 ## 1. Push to GitHub
 ```bash
