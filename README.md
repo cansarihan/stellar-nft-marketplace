@@ -1,5 +1,7 @@
 # ✦ Stellar NFT Marketplace — Soroban dApp (Level 3)
 
+[![CI](https://github.com/cansarihan/stellar-nft-marketplace/actions/workflows/ci.yml/badge.svg)](https://github.com/cansarihan/stellar-nft-marketplace/actions/workflows/ci.yml)
+
 A complete, end-to-end NFT marketplace built on **Stellar / Soroban**. It
 demonstrates advanced smart-contract development with **inter-contract
 communication**, **on-chain event streaming**, a production-grade **CI/CD**
