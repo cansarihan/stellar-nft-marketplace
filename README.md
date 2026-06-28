@@ -152,10 +152,14 @@ cover price math, event formatting, and component rendering states.
 
 `.github/workflows/ci.yml` runs on every push and PR:
 
-- **contracts** job — `cargo test` + release Wasm build on `wasm32v1-none`
-- **frontend** job — `npm ci`, type-check, Vitest, production build
+- **CI — contracts** job — `cargo test` + release Wasm build on `wasm32v1-none`
+- **CI — frontend** job — `npm ci`, type-check, Vitest, production build
+- **CD — deploy** job — on every push to `main`, after both CI jobs pass, the
+  frontend is built and **automatically deployed to GitHub Pages**
+  → https://cansarihan.github.io/stellar-nft-marketplace/
 
-Both jobs cache dependencies and fail the pipeline on any error.
+All jobs cache dependencies and fail the pipeline on any error; deployment only
+runs when the full test suite is green.
 
 ---
 
